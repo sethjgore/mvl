@@ -22,6 +22,6 @@ return array(
 	'database' => 'mvl_craft',
 
 	// The prefix to use when naming tables. This can be no more than 5 characters.
-	'tablePrefix' => 'craft',
+	'tablePrefix' => 'craft'
 
 );
