@@ -1,5 +1,5 @@
 /**
- * SAMPLE tasks configuration
+ * Browser Sync (Craft CMS) tasks configuration
  */
 
 'use strict';
@@ -9,16 +9,14 @@ var config = require('../config');
 module.exports = {
   bsFiles: {
       src: [
-      '**/*.css',
-      '**/**/*.php',
-      '**/**/*.html',
-      '**/**/*.png',
+      'resources/*.css',
+      'craft/templates/**/*.html',
+      'resources/**/*.img',
+      'resources/**/*.png',
     ]
 
   },
   options: {
     watchTask: true,
-    proxy: '0.0.0.0:9999',
-    host: '192.168.0.6',
   }
 }

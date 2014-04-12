@@ -15,5 +15,8 @@
   ],
   "devDependencies": {
     "normalize-scss": "~3.0.1"
+  },
+  "dependencies": {
+    "is": "https://github.com/sethjgore/is"
   }
 }
