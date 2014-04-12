@@ -1,0 +1,56 @@
+
+//CATEGORY -- Document & Body Fonts
+html
+  font-size: 62.5%
+
+body
+
+  //sets line-height
+  line-height: 1.61em
+
+  //Keeps Fonts Responsive with Rem
+  //paragraph/baseline text size is at 16px
+  font-size: 1.6rem
+
+//CATEGORY --- Paragraph & Baseline fonts
+p
+  font-family: $theme-font
+
+//CATEGORY --- Lists
+
+//CATEGORY --- Headers
+h1,h2,h3,h4,h5,h6
+  line-height: 1.3em
+
+$h1-font-size: 3rem
+$heading-ratio: $h1-font-size + 1rem
+
+h1
+  font-size: $h1-font-size
+h2
+  font-size: golden-ratio($heading-ratio, -1)
+
+h3
+  font-size: golden-ratio($heading-ratio, -2)
+
+
+h4
+  font-size: golden-ratio($heading-ratio, -3)
+
+
+h5
+  font-size: golden-ratio($heading-ratio, -4)
+
+
+h6
+  font-size: golden-ratio($heading-ratio, -4)
+
+
+hr
+  margin: 0
+
+//CATEGORY --- Components & Other type tags
+
+blockquote
+  font-size: golden-ratio($heading-ratio, -1)
+  line-height: 1.4em

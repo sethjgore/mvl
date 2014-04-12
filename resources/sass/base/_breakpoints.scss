@@ -1,0 +1,14 @@
+
+$grid-columns: 6;
+
+$bp-phoneish:        0px;
+$bp-tabletish:       500px;
+$bp-tabletopish:     768px;
+$bp-laptopish:       900px;
+
+
+$phoneish:    new-breakpoint(min-width $bp-phoneish 6);
+$mobileish:   new-breakpoint(min-width $bp-phoneish max-width ($bp-tabletopish - 1) 6);
+$tabletish:   new-breakpoint(min-width $bp-tabletish 6);
+$tabletopish: new-breakpoint(min-width $bp-tabletopish 12);
+$laptopish:   new-breakpoint(min-width $bp-laptopish 12);

@@ -1,0 +1,44 @@
+.oc
+  +outer-container
+  +row
+  padding: 0 4rem
+
+  +media($tabletopish)
+    padding: 0 4.5rem
+
+= oc
+  @extend .oc
+
+.c
+  +span-columns(6)
+
+//adds margin to the content box
+%content-pad
+  padding-bottom: 6rem
+
+//LAYOUT MARGINS & PADDINGS
+@for $i from 1 through 30
+  %mb-#{$i}
+    margin-bottom: 0.1rem * $i
+
+@for $i from 1 through 30
+  %mt-#{$i}
+    margin-top: 0.1rem * $i
+
+@for $i from 1 through 30
+  %ml-#{$i}
+    margin-left: 0.1rem * $i
+
+@for $i from 1 through 30
+  %pb-#{$i}
+    padding-bottom: 0.1rem * $i
+
+//Below is for strict exceptions
+@for $i from 1 through 30
+  %pt-#{$i}
+    padding-top: 0.1rem * $i
+
+@for $i from 1 through 30
+  %pl-#{$i}
+    padding-left: 0.1rem * $i
+

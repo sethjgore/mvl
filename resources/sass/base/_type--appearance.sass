@@ -1,0 +1,51 @@
+//CATEGORY -- Document & Body Fonts
+html,body
+
+  //_fonts.sass holds all font-family naming instances
+  font-family: $theme-font, sans-serif
+
+  //Lato [Google] 400 = Regular
+  font-weight: 400
+
+  //Color of Default Font
+  @extend .is__text--c-black
+
+
+//CATEGORY --- Paragraph & Baseline fonts
+p
+  @extend .is__text--light
+
+small
+  font-size: .7rem
+
+
+//CATEGORY --- Headers
+h1,h2,h3,h4,h5,h6
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+h1
+  @extend .is__text--bold
+  @extend .is__text--c-white
+
+h2
+  @extend .is__text--light
+h3
+  @extend .is__text--light
+hr
+  margin: 0
+
+
+//CATEGORY --- Components & Other type tags
+
+blockquote
+  @extend .is__text--centered
+  @extend .is__text--light
+
+caption
+  @extend .is__text--uppercase
+  @extend .is__text--centered
+
+a
+  text-decoration: none
+  color: inherit
